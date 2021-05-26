@@ -21,9 +21,9 @@
 </script>
 
 <svelte:head>
-	<meta name="author" content="Gilbert Sinnott">
-	<meta name="description" content="Gilbert Sinnott">
-	<meta name="theme-color" content="hsl( 200, 10%, 10% )" />
+	<meta name="author" content="Gilbert Sinnott, Meredith Thomas, Helin Ulas">
+	<meta name="description" content="Regie: KI, Eine Produktion der Digitalen Bürgerbühne — Künstlerische Leitung: Martin Grünheit — Premiere im Schauspielhaus, Kleines Haus, Regie: KI, Besetzung: : Mit Angela Cramer-Laschke, Alev Engel, Lara Kebeck, Tilmann Krämer, Jonas Prokopf, Jasmin Schlick, Begüm Sengül, Denise Thoma, Regie: KI, Künstlerische Leitung: Martin Grünheit, Dramaturgie/Kybernetik: Michael Straeubig, Bühne: Lea Kissing, Kostüm: Imke Paulick, Musikalische Leitung/Komposition: Frieder Hepting, Programmierung: Meredith Thomas, Helin Ulas, Gilbert Sinnott, Audiovisuelles Design: Helin Ulas, Regieassistenz: Auguste Sandner, Bühnenbildassistenz: Susanne Hoffmann">
+	<meta name="theme-color" content="#FF3A51" />
 </svelte:head>
 
 

@@ -6,7 +6,7 @@
   },
   "scripts": {
     "dev": "pnpm run sass & pnpm run parse & svelte-kit dev",
-    "build": "pnpm run parse && svelte-kit build && rm -rf ../regieki.github.io && mv build ../regieki.github.io",
+    "build": "pnpm run parse && svelte-kit build && rm -rf ../regieki.github.io/** && mv build/* ../regieki.github.io/",
     "parse": "node ./parse.js",
     "sass": "node-sass src/app.sass static/app.css -w",
     "preview": "svelte-kit preview"
