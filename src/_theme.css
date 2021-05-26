@@ -4,7 +4,7 @@
 	--font-size: 16px;
 
 	--borders: 1px;
-	--stroke-width: 2px;
+	--stroke-width: 1px;
 
 	--media-sm: 576px;
 	--media-md: 768px;
@@ -17,7 +17,7 @@
 
 	--bg: hsl( 200, 30%, 98% );
 	--bg-pop: hsl( 200, 10%, 100% );
-	--bg-sink: hsl( 200, 10%, 50% );
+	--bg-sink: hsl( 200, 10%, 95% );
 }
 
 .dark {
@@ -74,8 +74,8 @@
 	--bg-d: hsl( 300, 20%, 25% );
 	--bg-e: hsl( 300, 20%, 30% );
 
-	--color-a: hsl( 0, 90%, 75% );
-	--color-b: hsl( 80, 90%, 75% );
+	--color-a: #FF3A51; /*rgba(235,0,121); */
+	--color-b: #996ed1;
 	--color-c: hsl( 160, 90%, 75% );
 	--color-d: hsl( 240, 90%, 75% );
 	--color-e: hsl( 320, 90%, 75% );

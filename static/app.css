@@ -2,7 +2,7 @@
   --container: 1024px;
   --font-size: 16px;
   --borders: 1px;
-  --stroke-width: 2px;
+  --stroke-width: 1px;
   --media-sm: 576px;
   --media-md: 768px;
   --media-lg: 922px;
@@ -12,7 +12,7 @@
   --color-fade: hsl( 200, 10%, 50% );
   --bg: hsl( 200, 30%, 98% );
   --bg-pop: hsl( 200, 10%, 100% );
-  --bg-sink: hsl( 200, 10%, 50% ); }
+  --bg-sink: hsl( 200, 10%, 95% ); }
 
 .dark {
   --bg: hsl( 200, 10%, 10% );
@@ -54,8 +54,9 @@
   --bg-c: hsl( 300, 20%, 20% );
   --bg-d: hsl( 300, 20%, 25% );
   --bg-e: hsl( 300, 20%, 30% );
-  --color-a: hsl( 0, 90%, 75% );
-  --color-b: hsl( 80, 90%, 75% );
+  --color-a: #FF3A51;
+  /*rgba(235,0,121); */
+  --color-b: #996ed1;
   --color-c: hsl( 160, 90%, 75% );
   --color-d: hsl( 240, 90%, 75% );
   --color-e: hsl( 320, 90%, 75% );
@@ -56269,12 +56270,31 @@ html, body {
     font-weight: bold; }
   html em, body em {
     font-style: italic; }
-  html a, body a {
+  html code, body code {
+    font-family: monospace;
+    font-size: 0.95em;
+    border: 1px solid var(--color);
+    padding: 0em 0.2em; }
+  html pre, body pre {
+    border: 1px solid var(--color);
+    padding: 1em;
+    overflow: auto; }
+    html pre code, body pre code {
+      border: none;
+      padding: 0em; }
+  html sup, body sup {
+    font-size: 0.7em;
+    margin: 0em 0.2em;
+    position: relative;
+    top: -0.5em; }
+  html a:not(.unclickable), body a:not(.unclickable) {
     border-bottom: 1px solid var(--color); }
-    html a:hover, body a:hover {
+    html a:not(.unclickable):hover, body a:not(.unclickable):hover {
       background: var(--color);
       color: white;
       border-bottom-color: var(--color); }
+  html #diagram *, body #diagram * {
+    stroke-width: 1px !important; }
   html ul li:before, body ul li:before {
     content: "";
     width: 0.3em;

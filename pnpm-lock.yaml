@@ -1,15 +1,17 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@sveltejs/kit': next
+  '@sveltejs/adapter-static': 1.0.0-next.9
+  '@sveltejs/kit': 1.0.0-next.107
   markdown-it: ^12.0.6
+  markdown-it-include: ^2.0.0
   svelte: ^3.34.0
 
-dependencies:
-  markdown-it: 12.0.6
-
 devDependencies:
-  '@sveltejs/kit': 1.0.0-next.109_svelte@3.38.2
+  '@sveltejs/adapter-static': 1.0.0-next.9
+  '@sveltejs/kit': 1.0.0-next.107_svelte@3.38.2
+  markdown-it: 12.0.6
+  markdown-it-include: 2.0.0_markdown-it@12.0.6
   svelte: 3.38.2
 
 packages:
@@ -24,9 +26,13 @@ packages:
       picomatch: 2.3.0
     dev: true
 
-  /@sveltejs/kit/1.0.0-next.109_svelte@3.38.2:
-    resolution: {integrity: sha512-72iHsgcZTj9WU2VMq/qzMdFidTrSlJ1+KE0Iiw43Gee8TkKi5tMOyeu/f8lWa4HzdHLFZ2CJdvmcL7w3F4SWjg==}
-    engines: {node: ^12.20 || ^14.13.1 || >= 16}
+  /@sveltejs/adapter-static/1.0.0-next.9:
+    resolution: {integrity: sha512-yqZ+4dzi+2+2jDPHCrI7WrLdXyQ/0U56a7aFdepmodpvpxhazF203D1ez+AtTo27FjMmHjfI+q0O2FivUOosxg==}
+    dev: true
+
+  /@sveltejs/kit/1.0.0-next.107_svelte@3.38.2:
+    resolution: {integrity: sha512-HxomGMWbuWTU8lahk98hqIL/xjW6HzNTAvTZVMnnmlMHN1N8x7+abkz4Y09Zhu8lZkZpFuqBj2UlsgPW4uJXtw==}
+    engines: {node: '>= 12.17.0'}
     hasBin: true
     peerDependencies:
       svelte: ^3.38.2
@@ -72,7 +78,7 @@ packages:
 
   /argparse/2.0.1:
     resolution: {integrity: sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==}
-    dev: false
+    dev: true
 
   /chalk/4.1.1:
     resolution: {integrity: sha512-diHzdDKxcU+bAsUboHLPEDQiw0qEe0qd7SYUn3HgcFlWgbDcfLGswOHYeGrHKzG9z6UYf01d9VFMfZxPM1xZSg==}
@@ -116,7 +122,7 @@ packages:
 
   /entities/2.1.0:
     resolution: {integrity: sha512-hCx1oky9PFrJ611mf0ifBLBRW8lUUVRlFolb5gWRfIELabBlbp9xZvrqZLZAs+NxFnbfQoeGd8wDkygjg7U85w==}
-    dev: false
+    dev: true
 
   /esbuild/0.11.23:
     resolution: {integrity: sha512-iaiZZ9vUF5wJV8ob1tl+5aJTrwDczlvGP0JoMmnpC2B0ppiMCu8n8gmy5ZTGl5bcG081XBVn+U+jP+mPFm5T5Q==}
@@ -165,7 +171,16 @@ packages:
     resolution: {integrity: sha512-gDBO4aHNZS6coiZCKVhSNh43F9ioIL4JwRjLZPkoLIY4yZFwg264Y5lu2x6rb1Js42Gh6Yqm2f6L2AJcnkzinQ==}
     dependencies:
       uc.micro: 1.0.6
-    dev: false
+    dev: true
+
+  /markdown-it-include/2.0.0_markdown-it@12.0.6:
+    resolution: {integrity: sha512-wfgIX92ZEYahYWiCk6Jx36XmHvAimeHN420csOWgfyZjpf171Y0xREqZWcm/Rwjzyd0RLYryY+cbNmrkYW2MDw==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      markdown-it: '>=8.4.2'
+    dependencies:
+      markdown-it: 12.0.6
+    dev: true
 
   /markdown-it/12.0.6:
     resolution: {integrity: sha512-qv3sVLl4lMT96LLtR7xeRJX11OUFjsaD5oVat2/SNBIb21bJXwal2+SklcRbTwGwqWpWH/HRtYavOoJE+seL8w==}
@@ -176,11 +191,11 @@ packages:
       linkify-it: 3.0.2
       mdurl: 1.0.1
       uc.micro: 1.0.6
-    dev: false
+    dev: true
 
   /mdurl/1.0.1:
     resolution: {integrity: sha1-/oWy7HWlkDfyrf7BAP1sYBdhFS4=}
-    dev: false
+    dev: true
 
   /mri/1.1.6:
     resolution: {integrity: sha512-oi1b3MfbyGa7FJMP9GmLTttni5JoICpYBRlq+x5V16fZbLsnL9N3wFqqIm/nIG43FjUFkFh9Epzp/kzUGUnJxQ==}
@@ -278,7 +293,7 @@ packages:
 
   /uc.micro/1.0.6:
     resolution: {integrity: sha512-8Y75pvTYkLJW2hWQHXxoqRgV7qb9B+9vFEtidML+7koHUFapnVJAZ6cKs+Qjz5Aw3aZWHMC6u0wJE3At+nSGwA==}
-    dev: false
+    dev: true
 
   /vite/2.3.4:
     resolution: {integrity: sha512-7orxrF65+Q5n/sMCnO91S8OS0gkPJ7g+y3bLlc7CPCXVswK8to1T8YycCk9SZh+AcIc0TuN6YajWTBFS5atMNA==}

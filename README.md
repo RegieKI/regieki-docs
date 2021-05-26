@@ -38,11 +38,4 @@ Documentation for technical setup and toolkits created for production [RegieKI -
 
 #### Credits
 
-Created by [Helin Ulas](), [Meredith Thomas](), [Gilbert Sinnott]()
-
-#### License
-
-MIT / Creative Commons
-
-
-[![DHAUS](../docs/dhaus.svg)](https://www.dhaus.de)
+Created by [Gilbert Sinnott](), [Meredith Thomas](), [Helin Ulas]() (tech trio™)

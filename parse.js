@@ -1,16 +1,17 @@
 import fs from 'fs'
 import path from 'path'
 import markdown from 'markdown-it'
+import include from 'markdown-it-include'
 
 let out = {}
 
 const run = async e => {
 	const dir = await fs.readdirSync( '../' )
-	const md = new markdown()
+	const md = (new markdown( {html: true } )).use( include, './')
 
 	for (let i = 0; i < dir.length; i++ ) {
 		const name = dir[i]
-		let readme = path.join( '../', name + '/README.md') 
+		let readme = path.join( '../', name + '/README.md')
 		if (await fs.existsSync( readme ) ) {
 
 			out[name] = md.render( await (await fs.readFileSync( readme )).toString() )
@@ -19,5 +20,5 @@ const run = async e => {
 
 	await fs.writeFileSync( 'static/data.json', JSON.stringify(out, null, '\t') )
 }
-
-run()
+ 
+run() 

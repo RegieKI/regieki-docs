@@ -8,12 +8,14 @@
 	import { browser, dev } from '$app/env'
 	import { onMount } from 'svelte'
 	import { html } from './../store.js'
+	import { page } from '$app/stores'
 
 
 	export let data
 
 	html.set( data )
-	// $html = data
+
+	$: path = $page.path.substring(1)
 
 
 </script>
@@ -25,13 +27,24 @@
 </svelte:head>
 
 
-<div class="sassis flex row p1 maxw62em margin-auto">
-	<nav class="flex column-flex-start-start minw12em cmb1">
-		{#each Object.keys($html) as name}
-			<a class="unclickable" href={'/'+name}>
-				{name}
+<div class="sassis flex row-center-start w100vw margin-auto">
+	<nav class="flex column-flex-start-space-between minw16em h100vh">
+		<div class="flex column p1">
+			<!-- <h1>RegieKI</h1> -->
+			{#each Object.keys($html).reverse() as name}
+				<a 
+					class:filled={path == name || path == '' && name == 'regieki-docs'}
+					class="unclickable p0-1 plr0-5 mt1 flex" 
+					href={'/'+name}>
+					{name}
+				</a>
+			{/each}
+			<a 
+				class="button mtb2"
+				href="https://github.com/regieki">
+				github
 			</a>
-		{/each}
+		</div>
 	</nav>
 
 	<slot />

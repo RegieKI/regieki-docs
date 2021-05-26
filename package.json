@@ -1,18 +1,22 @@
 {
   "name": "~TODO~",
   "version": "0.0.1",
+  "engines": {
+    "node": ">=0.15"
+  },
   "scripts": {
-    "dev": "pnpm run sass & nodemon --watch parse.js parse.js & svelte-kit dev",
-    "build": "svelte-kit build",
+    "dev": "pnpm run sass & pnpm run parse & svelte-kit dev",
+    "build": "pnpm run parse && svelte-kit build && rm -rf ../regieki.github.io && mv build ../regieki.github.io",
+    "parse": "node ./parse.js",
     "sass": "node-sass src/app.sass static/app.css -w",
     "preview": "svelte-kit preview"
   },
   "devDependencies": {
-    "@sveltejs/kit": "next",
+    "markdown-it": "^12.0.6",
+    "markdown-it-include": "^2.0.0",
+    "@sveltejs/adapter-static": "1.0.0-next.9",
+    "@sveltejs/kit": "1.0.0-next.107",
     "svelte": "^3.34.0"
   },
-  "type": "module",
-  "dependencies": {
-    "markdown-it": "^12.0.6"
-  }
+  "type": "module"
 }
