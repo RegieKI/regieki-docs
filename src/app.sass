@@ -1,0 +1,33 @@
+@import './_theme'
+@import './../../sassis/src/sassis'
+
++sassis
++shorthand
++layout
+html, body 
+	background: var(--bg)
+	*
+		-webkit-tap-highlight-color: transparent
+
+	h1, h2, h3, h4, h5, h6, strong, b
+		font-weight: bold
+	em
+		font-style: italic
+
+	a
+		border-bottom: 1px solid var(--color)
+		&:hover
+			background: var(--color)
+			color: white
+			border-bottom-color: var(--color)
+
+	ul
+		li
+			&:before
+				$s: 0.3em
+				content: ""
+				+wh( $s, $s )
+				border: 1px solid var(--color)
+				display: inline-block
+				border-radius: $s
+				margin-right: $s * 2
