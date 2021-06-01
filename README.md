@@ -32,9 +32,9 @@ Documentation for technical setup and toolkits created for production [RegieKI -
 
 #### Photos
 
-* [fabrication](https://github.com/RegieKI/pdac/blob/main/media/fabrication)
-* [stage](https://github.com/RegieKI/pdac/blob/main/media/stage)
-* [misc](https://github.com/RegieKI/pdac/blob/main/media/misc)
+* [fabrication](https://github.com/RegieKI/regieki-docs/tree/main/media/fabrication)
+* [stage](https://github.com/RegieKI/regieki-docs/tree/main/media/stage)
+* [misc](https://github.com/RegieKI/regieki-docs/tree/main/media/misc)
 
 
 #### Credits
