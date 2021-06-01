@@ -43,5 +43,5 @@ Created by [Gilbert Sinnott](), [Helin Ulas](), [Meredith Thomas]() (tech trioâ„
 
 #### License
 
-Code - [MIT](https://github.com/RegieKI/pdac/blob/main/LICENSE-MIT.md) \
-Media - [Creative Commons](https://github.com/RegieKI/pdac/blob/main/LICENSE-CC.md)
+Code - [MIT](https://github.com/RegieKI/regieki-docs/blob/main/LICENSE-MIT.md) \
+Media - [Creative Commons](https://github.com/RegieKI/regieki-docs/blob/main/LICENSE-CC.md)
