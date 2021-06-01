@@ -19,6 +19,18 @@ const run = async e => {
 	}
 
 	await fs.writeFileSync( 'static/data.json', JSON.stringify(out, null, '\t') )
+
+	const dirs = ['fabrication', 'misc', 'stage']
+
+	for( let i = 0; i < dirs.length; i++) {
+		const imgs = await fs.readdirSync( 'media/' + dirs[i] )
+
+		await fs.writeFileSync( 'media/' + dirs[i] + '/README.md', imgs.map( (src, idx) => {
+			return `
+[![${dirs[i]} ${idx}](${src})
+			`
+		}).join('\n') )
+	}
 }
  
 run() 
