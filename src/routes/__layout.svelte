@@ -17,6 +17,19 @@
 
 	$: path = $page.path.substring(1)
 
+	const linkz = [
+		'regieki-docs',
+		'pdac-backend',
+		'pdac-frontend',
+		'pdac',
+		'pdac-specification',
+		'regieki-core',
+		'regieki-av',
+		'regieki-controller'
+	]
+
+	let active = false
+
 
 </script>
 
@@ -27,24 +40,42 @@
 </svelte:head>
 
 
-<div class="sassis flex row-center-start w100vw margin-auto">
-	<nav class="flex column-flex-start-space-between minw16em h100vh">
+<div class="sassis flex row-center-start w100vw margin-auto" id="layout">
+	<div class="w100pc plr1 pt1"  id="menu">
+		<button 
+			on:click={e => active = !active}
+			class="text-center block w100pc radius2em">menu</button>
+	</div>
+	<nav 
+		class:active={active}
+		class="bg flex column-stretch-space-between minw14em z-index99 t0 l0" id="nav">
 		<div class="flex column p1">
 			<!-- <h1>RegieKI</h1> -->
-			{#each Object.keys($html).reverse() as name}
+			{#each linkz as name}
 				<a 
+					on:click={e => active = false}
 					class:filled={path == name || path == '' && name == 'regieki-docs'}
-					class="unclickable p0-1 plr0-5 mt1 flex" 
+					class="unclickable p0-5 mtb0-5 flex" 
 					href={'/'+name}>
 					{name}
 				</a>
 			{/each}
 			<a 
-				class="button mtb2"
+				on:click={e => active = false}
+				class="button mt1 radius2em"
 				href="https://github.com/regieki">
 				github
 			</a>
 		</div>
+		<!-- <div class="p1 cmb1 sticky t0 l0">
+			<p>
+				<a href="https://github.com/RegieKI/pdac/blob/main/LICENSE-MIT.md">MIT</a>
+			</p>
+			<p>
+				<a href="https://github.com/RegieKI/pdac/blob/main/LICENSE-CC.md">CC BY-NC-SA 4.0</a>
+			</p>
+
+		</div> -->
 	</nav>
 
 	<slot />

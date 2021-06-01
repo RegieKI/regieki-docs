@@ -6,7 +6,7 @@ Documentation for technical setup and toolkits created for production [RegieKI -
 
 **Terminology**
 
-* *Core* - machine learning and models
+* *AI / Core* - machine learning and models
 * *AV* - audio visual material and patches
 * *PDAC* - data recording and communication device
 
@@ -20,22 +20,28 @@ Documentation for technical setup and toolkits created for production [RegieKI -
 * *[regieki-core](https://github.com/regieki/regieki-core)* - repository for managing datasets, training and running ML models
 * *[regieki-av](https://github.com/regieki/regieki-av)* - touch designer patches
 * *[regieki-controller](https://github.com/regieki/regieki-controller)* - remote testing application for stage PDACs
+* *[hydritsi-core](https://github.com/autr/hydritsi-core)* - experimental fork of video-conferencing app [Jitsi](https://meet.jit.si)
 
 #### System
 
-* *collection* - training instructions are received remotely by performers, recorded video is uploaded to cloud
-* *training* - machine learning models are trained with cloud data
-* *stage* - performers interact with models, models controls on-stage audio visual
+* *collection* - training instructions received remotely by performers, recordings uploaded
+* *training* - machine learning model is trained with cloud recordings
+* *production* - performers interact with models, models effect on-stage audio visual
 
-------------SVG IMAGE------------
+!!!include(../regieki-docs/sys.svg)!!!
 
 #### Photos
 
-* [fabrication]()
-* [stage]()
-* [misc]()
+* [fabrication](https://github.com/RegieKI/pdac/blob/main/media/fabrication)
+* [stage](https://github.com/RegieKI/pdac/blob/main/media/stage)
+* [misc](https://github.com/RegieKI/pdac/blob/main/media/misc)
 
 
 #### Credits
 
-Created by [Gilbert Sinnott](), [Meredith Thomas](), [Helin Ulas]() (tech trio™)
+Created by [Gilbert Sinnott](), [Helin Ulas](), [Meredith Thomas]() (tech trio™)
+
+#### License
+
+Code - [MIT](https://github.com/RegieKI/pdac/blob/main/LICENSE-MIT.md) \
+Media - [Creative Commons](https://github.com/RegieKI/pdac/blob/main/LICENSE-CC.md)
