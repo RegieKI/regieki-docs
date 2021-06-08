@@ -23,7 +23,7 @@
 		'pdac-frontend',
 		'pdac',
 		'pdac-specification',
-		'regieki-core',
+		'regie-core-production',
 		'regieki-av',
 		'regieki-controller'
 	]

@@ -17,7 +17,7 @@ Documentation for technical setup and toolkits created for production [RegieKI -
 * *[pdac-frontend](https://github.com/regieki/pdac-frontend)* - webapp user-interface for PDAC devices (development)
 * *[pdac-backend](https://github.com/regieki/pdac-backend)* - Python backend for PDAC devices (development)
 * *[pdac](https://github.com/regieki/pdac)* - combined frontend / backend application (production)
-* *[regieki-core](https://github.com/regieki/regieki-core)* - repository for managing datasets, training and running ML models
+* *[regie-core-production](https://github.com/regieki/regie-core-production)* - repository for managing datasets, training and running ML models
 * *[regieki-av](https://github.com/regieki/regieki-av)* - touch designer patches
 * *[regieki-controller](https://github.com/regieki/regieki-controller)* - remote testing application for stage PDACs
 * *[hydritsi-core](https://github.com/autr/hydritsi-core)* - experimental fork of video-conferencing app [Jitsi](https://meet.jit.si)
